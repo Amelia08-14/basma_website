@@ -1,0 +1,136 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "solutions": "Solutions",
+    "methodology": "Méthodologie",
+    "expertise": "Expertise",
+    "impact": "Impact",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Votre partenaire <br /> apprentissage pour la <br /> performance",
+    "subtitle": "Lorsque les compétences grandissent, la performance de l'entreprise suit.",
+    "cta": "Découvrir Basma",
+    "explore": "Découvrir nos solutions",
+    "journey_title": "Un parcours d'apprentissage unique",
+    "journey_desc": "Quel que soit votre objectif, montée en compétences, accompagnement de la transformation ou développement de nouvelles capacités, le voyage commence ici."
+  },
+  "about": {
+    "title": "QUI NOUS SOMMES",
+    "description": "Basma est un créateur de programmes d'apprentissage sur mesure qui aide les organisations à développer les compétences de leur capital humain grâce à des expériences de formation modernes et engageantes. Nous concevons des programmes basés sur de vrais besoins commerciaux, de vrais défis et de vrais objectifs de performance.",
+    "cards": {
+      "positioning": {
+        "title": "Clarification du positionnement",
+        "desc": "Votre partenaire pour la conception d'un apprentissage moderne — de la stratégie au développement de contenu."
+      },
+      "mission": {
+        "title": "Énoncé de mission",
+        "desc": "Nous créons des apprentissages qui aident les gens à grandir et les entreprises à performer."
+      },
+      "visual": {
+        "title": "Ajustement visuel",
+        "desc": "Améliorer le visuel du laptop afin qu’il reflète mieux l’identité Basma."
+      }
+    },
+    "discover_btn": "Commencer avec Basma"
+  },
+  "what_we_do": {
+    "title": "Ce que nous faisons",
+    "subtitle": "Nous concevons et délivrons des expériences d'apprentissage alignées avec votre stratégie, vos équipes et vos objectifs.",
+    "items": [
+      "Programmes d'apprentissage personnalisés basés sur vos besoins",
+      "Formation basée sur des scénarios réels inspirés de situations de votre organisation",
+      "Formats d'apprentissage flexibles adaptés au rythme de vos équipes",
+      "Parcours d'apprentissage clairs et certifications pour structurer la progression",
+      "Mise à niveau de votre contenu de formation existant pour le rendre plus engageant",
+      "Support continu et amélioration pour garder l'apprentissage pertinent dans le temps",
+      "Certification et accréditation"
+    ]
+  },
+  "learning_cycle": {
+    "title": "Le Cycle d'Apprentissage Basma",
+    "subtitle": "Nous travaillons dans tous les secteurs et sur tous les sujets pour soutenir les domaines de compétences clés.",
+    "steps": {
+        "01": { "title": "Découvrir", "desc": "Comprendre le contexte, les défis et les compétences nécessaires." },
+        "02": { "title": "Concevoir", "desc": "Créer un plan d'apprentissage structuré aligné sur les besoins de performance." },
+        "03": { "title": "Développer", "desc": "Construire des scénarios, modules, vidéos, outils et ressources d'apprentissage." },
+        "04": { "title": "Délivrer", "desc": "Déployer l'apprentissage avec les bons formats, le bon rythme et le bon support." },
+        "05": { "title": "Améliorer", "desc": "Mesurer les progrès et affiner continuellement pour un impact durable." }
+    }
+  },
+  "contact": {
+      "pre_title": "Nous sommes là pour répondre à toutes vos questions",
+      "title": "Parlons de <br /> Vos Besoins <br /> d'Apprentissage",
+      "subtitle": "Dites-nous ce que vous recherchez, et nous explorerons comment Basma peut vous aider à concevoir la bonne solution d'apprentissage.",
+      "phone_label": "N'hésitez pas à nous contacter !",
+      "email_label": "Comment pouvons-nous vous aider ?!",
+      "demo_button": "Demander une démo",
+      "form_title": "Contactez-nous",
+      "form_subtitle": "Remplissez simplement le formulaire et nos experts mondiaux vous contacteront immédiatement avec une solution et un devis pour vous aider !",
+      "form": {
+          "name": "Votre Nom",
+          "email": "Adresse Email",
+          "company": "Nom de l'entreprise",
+          "phone": "Numéro de téléphone",
+          "message": "Veuillez fournir suffisamment d'informations sur votre entreprise...",
+          "submit": "Envoyer la demande"
+      }
+  },
+  "solutions": {
+      "title": "Nos Solutions",
+      "subtitle": "Découvrez comment nous aidons les organisations de tous les secteurs à développer leurs capacités et à stimuler la performance grâce à des expériences d'apprentissage modernes."
+  },
+  "where_we_help": {
+      "title": "Où nous pouvons aider",
+      "subtitle": "Nous travaillons dans tous les secteurs et sur tous les sujets pour soutenir les domaines de compétences clés.",
+      "areas": [
+        "Leadership & Culture",
+        "Ressources Humaines & Développement des Personnes",
+        "Finance & Stratégie",
+        "HSE & Conformité",
+        "Supply Chain & Opérations",
+        "Marketing & Expérience Client",
+        "IT & Compétences Numériques"
+      ]
+  },
+  "experience": {
+      "title": "À Quoi Ressemblera Votre Expérience d'Apprentissage",
+      "features": [
+        "Facile d'accès n'importe quand, n'importe où",
+        "Blocs d'apprentissage courts et ciblés",
+        "Situations réelles, pas juste de la théorie",
+        "Suivi clair des progrès et de l'achèvement"
+      ]
+  },
+  "about_page": {
+      "title": "À propos de nous",
+      "subtitle": "Découvrez qui nous sommes, ce qui nous anime et comment nous transformons l'apprentissage en entreprise pour le meilleur."
+  },
+  "testimonials": {
+    "title_prefix": "Nous apportons plus de",
+    "title_highlight": "10 ans d'expérience",
+    "title_suffix": "dans l'apprentissage en entreprise, la transformation numérique et la conception de formations axées sur la performance",
+    "items": [
+        {
+            "text": "Basma nous a aidés à repenser notre approche d'apprentissage et à accélérer le développement des compétences au sein des équipes",
+            "author": "Directeur RH",
+            "industry": "Secteur Bancaire"
+        },
+        {
+            "text": "Clair, moderne et aligné avec nos priorités commerciales.",
+            "author": "Responsable L&D",
+            "industry": "Industrie de l'Énergie"
+        },
+        {
+            "text": "Les modules basés sur des scénarios ont fait une réelle différence en termes d'engagement et de rétention.",
+            "author": "Responsable Formation",
+            "industry": "Secteur Télécom"
+        }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Basma EdTech Company, Tous droits réservés. Avec Amour par",
+    "terms": "Termes & Conditions",
+    "privacy": "Politique de Confidentialité"
+  }
+}

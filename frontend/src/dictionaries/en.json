@@ -1,0 +1,136 @@
+{
+  "navbar": {
+    "about": "About",
+    "solutions": "Solutions",
+    "methodology": "Methodology",
+    "expertise": "Expertise",
+    "impact": "Impact",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your learning <br /> partner for business <br /> performance",
+    "subtitle": "When people grow their skills, business performance follows.",
+    "cta": "Discover Basma",
+    "explore": "Explore our learning solutions",
+    "journey_title": "A learning journey like no other",
+    "journey_desc": "Whatever your goal, upskilling teams, supporting transformation, or building new capabilities, the journey can start here."
+  },
+  "about": {
+    "title": "WHO WE ARE",
+    "description": "Basma is a fit-for-purpose learning programs creator that helps organizations develop stronger skills for their human capital through modern and engaging training experiences. We design programs around real business needs, real challenges, and real performance goals.",
+    "cards": {
+      "positioning": {
+        "title": "Positioning Clarification",
+        "desc": "Your partner for designing modern learning — from strategy to content development."
+      },
+      "mission": {
+        "title": "Mission Statement",
+        "desc": "We create learning that helps people grow, and businesses perform."
+      },
+      "visual": {
+        "title": "Visual Adjustment",
+        "desc": "Améliorer le visuel du laptop afin qu’il reflète mieux l’identité Basma."
+      }
+    },
+    "discover_btn": "Get started with Basma"
+  },
+  "what_we_do": {
+    "title": "What We Do",
+    "subtitle": "We design and deliver learning experiences that align with your strategy, your people, and your goals.",
+    "items": [
+      "Custom learning programs built around your business needs",
+      "Real scenario-based training inspired by situations in your organization",
+      "Flexible learning formats that fit your teams' rhythm",
+      "Clear learning paths and certifications to structure progression",
+      "Upgrade your existing training content to make it more engaging",
+      "Continuous support and improvement to keep learning relevant over time",
+      "Certification and accreditation"
+    ]
+  },
+  "learning_cycle": {
+    "title": "The Basma Learning Cycle",
+    "subtitle": "We Work Across Industries And Topics To Support Key Capability Areas.",
+    "steps": {
+        "01": { "title": "Discover", "desc": "Understand context, challenges, and the capabilities needed." },
+        "02": { "title": "Design", "desc": "Create a structured learning blueprint aligned with performance needs." },
+        "03": { "title": "Develop", "desc": "Build scenarios, modules, videos, tools, and learning assets." },
+        "04": { "title": "Deliver", "desc": "Deploy learning with the right formats, rhythm, and support." },
+        "05": { "title": "Improve", "desc": "Measure progress and refine continuously for lasting impact." }
+    }
+  },
+  "contact": {
+      "pre_title": "We're here to answer all your questions",
+      "title": "Let's Talk <br /> About Your <br /> Learning Needs",
+      "subtitle": "Tell us what you're looking for, and we'll explore how Basma can help you design the right learning solution.",
+      "phone_label": "Feel free to get in touch!",
+      "email_label": "How can we help you?!",
+      "demo_button": "Request a demo",
+      "form_title": "Get in touch",
+      "form_subtitle": "Just fill out the form and our global experts will be in touch right away with package and price solution to help you!",
+      "form": {
+          "name": "Your Name",
+          "email": "Email Address",
+          "company": "Company Name",
+          "phone": "Phone Number",
+          "message": "Kindly provide enough information about your business...",
+          "submit": "Submit Request"
+      }
+  },
+  "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "Explore how we help organizations across industries build capabilities and drive performance through modern learning experiences."
+  },
+  "where_we_help": {
+      "title": "Where We Can Help",
+      "subtitle": "We Work Across Industries And Topics To Support Key Capability Areas.",
+      "areas": [
+        "Leadership & Culture",
+        "Human Resources & People Development",
+        "Finance & Strategy",
+        "HSE & Compliance",
+        "Supply Chain & Operations",
+        "Marketing & Customer Experience",
+        "IT & Digital Skills"
+      ]
+  },
+  "experience": {
+      "title": "What Your Experience Learning Will Looks Like",
+      "features": [
+        "Easy To Access Anytime, Anywhere",
+        "Short, Focused Learning Blocks",
+        "Real Situations, Not Just Theory",
+        "Clear Progress And Completion Tracking"
+      ]
+  },
+  "about_page": {
+      "title": "About Us",
+      "subtitle": "Discover who we are, what drives us, and how we are transforming corporate learning for the better."
+  },
+  "testimonials": {
+    "title_prefix": "We bring more than",
+    "title_highlight": "10 years of experience",
+    "title_suffix": "in corporate learning, digital transformation, and performance-focused training design",
+    "items": [
+        {
+            "text": "Basma helped us redesign our learning approach and accelerate skills development across teams",
+            "author": "HR Director",
+            "industry": "Banking Sector"
+        },
+        {
+            "text": "Clear, modern, and aligned with our business priorities.",
+            "author": "Head of L&D",
+            "industry": "Energy Industry"
+        },
+        {
+            "text": "The scenario-based modules made a real difference in engagement and retention.",
+            "author": "Training Manager",
+            "industry": "Telecom Sector"
+        }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Basma EdTech Company, All Rights Reserved. With Love by",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  }
+}
