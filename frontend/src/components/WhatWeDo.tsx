@@ -6,13 +6,13 @@ export default function WhatWeDo({ dict }: { dict: any }) {
   const items = dict.items;
 
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="py-8 lg:py-12 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-purple-900/10 to-transparent pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 lg:mb-20 2xl:mb-32">
+        <div className="text-center mb-12 lg:mb-16 2xl:mb-24 mt-6">
            <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-emerald-600">{dict.title}</h2>
            <p className="text-white max-w-2xl 2xl:max-w-4xl mx-auto text-lg 2xl:text-xl">
              {dict.subtitle}

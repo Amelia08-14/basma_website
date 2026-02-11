@@ -24,7 +24,7 @@ export default function About({ dict }: { dict: any }) {
   ];
 
   return (
-    <section id="impact" className="py-16 lg:py-24 2xl:py-32 relative">
+    <section id="impact" className="pt-16 lg:pt-24 2xl:pt-32 pb-6 relative">
       <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 2xl:mb-24">
             <motion.div
@@ -72,7 +72,7 @@ export default function About({ dict }: { dict: any }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-12 text-center"
+            className="mt-16 text-center mb-0"
         >
             <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

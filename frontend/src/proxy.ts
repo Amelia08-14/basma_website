@@ -11,12 +11,16 @@ function getLocale(request: NextRequest) {
       return cookieLocale;
   }
 
+  // Force default locale to English if no cookie is set
+  // This ignores browser language preferences to prioritize English as default
+  /*
   // Check accept-language header
   const acceptLanguage = request.headers.get('accept-language');
   if (acceptLanguage) {
       // Very basic parsing
-      if (acceptLanguage.includes('fr')) return 'fr';
+      if (acceptLanguage.startsWith('fr')) return 'fr';
   }
+  */
   
   return defaultLocale;
 }
