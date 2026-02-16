@@ -4,6 +4,19 @@ import Values from '@/components/Values';
 import WhereWeHelp from '@/components/WhereWeHelp';
 import Experience from '@/components/Experience';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const isFr = lang === 'fr';
+
+  return {
+    title: isFr ? "Nos Solutions de Formation - Basma" : "Our Learning Solutions - Basma",
+    description: isFr 
+      ? "Découvrez nos solutions de formation sur mesure pour les entreprises en Algérie. Développement des compétences, leadership, et formation technique."
+      : "Explore our tailored corporate training solutions in Algeria. Skills development, leadership training, and technical upskilling.",
+  };
+}
 
 export default async function SolutionsPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
