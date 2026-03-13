@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "../globals.css";
 import FuturisticBackground from "@/components/FuturisticBackground";
 
@@ -70,12 +71,57 @@ export default async function RootLayout({
   params: Promise<{ lang: string }>;
 }>) {
   const { lang } = await params;
+
+  // JSON-LD for Organization
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Basma Learning",
+    "url": "https://basmalearning.com",
+    "logo": "https://basmalearning.com/logo_basma.png",
+    "description": lang === 'fr' 
+      ? "Basma est une entreprise d'apprentissage et de développement tournée vers l'avenir, engagée à transformer la formation professionnelle en Algérie."
+      : "Basma is a forward-thinking learning and development enterprise committed to transforming professional education across Algeria.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DZ",
+      "addressLocality": "Algiers" // You can update this with a more specific address if needed
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@basma.education",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "French", "Arabic"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/ba%E1%B9%A3ma-%D8%A8%D8%B5%D9%85%D8%A9/" // Add other social links here
+    ]
+  };
+
   return (
     <html lang={lang}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZD0N528TTM"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZD0N528TTM');
+          `}
+        </Script>
         <FuturisticBackground />
         <div className="relative z-10">
           {children}
