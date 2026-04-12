@@ -55,9 +55,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       type: 'website',
     },
     icons: {
-      icon: '/logo_basma.png',
-      shortcut: '/logo_basma.png',
-      apple: '/logo_basma.png',
+      icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+      shortcut: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+      apple: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
     },
   };
 }
