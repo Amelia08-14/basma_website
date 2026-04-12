@@ -13,6 +13,8 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
   const navItems = [
     { name: dict.about, href: `/${lang}/#impact` },
     { name: dict.solutions, href: `/${lang}/solutions` },
+    { name: dict.elearning, href: `/${lang}/about` },
+    { name: dict.blog, href: `/${lang}/blog` },
     { name: dict.expertise, href: `/${lang}/#expertise` },
     { name: dict.contact, href: `/${lang}/#contact` },
   ];

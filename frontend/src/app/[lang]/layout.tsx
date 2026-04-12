@@ -72,7 +72,6 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
 
-  // JSON-LD for Organization
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
@@ -85,7 +84,7 @@ export default async function RootLayout({
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "DZ",
-      "addressLocality": "Algiers" // You can update this with a more specific address if needed
+      "addressLocality": "Algiers"
     },
     "contactPoint": {
       "@type": "ContactPoint",
@@ -94,18 +93,12 @@ export default async function RootLayout({
       "availableLanguage": ["English", "French", "Arabic"]
     },
     "sameAs": [
-      "https://www.linkedin.com/company/ba%E1%B9%A3ma-%D8%A8%D8%B5%D9%85%D8%A9/" // Add other social links here
+      "https://www.linkedin.com/company/ba%E1%B9%A3ma-%D8%A8%D8%B5%D9%85%D8%A9/"
     ]
   };
 
   return (
     <html lang={lang}>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}
         suppressHydrationWarning
@@ -121,6 +114,9 @@ export default async function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-ZD0N528TTM');
           `}
+        </Script>
+        <Script id="json-ld" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify(jsonLd)}
         </Script>
         <FuturisticBackground />
         <div className="relative z-10">

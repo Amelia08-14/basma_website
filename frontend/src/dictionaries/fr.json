@@ -2,6 +2,8 @@
   "navbar": {
     "about": "À propos",
     "solutions": "Solutions",
+    "elearning": "E-learning",
+    "blog": "Blog",
     "methodology": "Méthodologie",
     "expertise": "Expertise",
     "impact": "Impact",
@@ -9,7 +11,7 @@
   },
   "hero": {
     "title": "Formation Corporate <br /> en Algérie pour la <br /> Performance",
-    "subtitle": "Basma Learning est votre partenaire pour la formation corporate en Algérie. Lorsque les compétences grandissent, la performance de l'entreprise suit.",
+    "subtitle": "Basma Learning accompagne les entreprises en Algérie dans le développement des compétences à travers des solutions de formation en présentiel, e-learning et blended learning, conçues pour améliorer la performance et répondre aux enjeux business.",
     "cta": "Découvrir Basma",
     "explore": "Découvrir nos solutions",
     "journey_title": "Un parcours d'apprentissage unique",
@@ -38,13 +40,11 @@
     "title": "Ce que nous faisons",
     "subtitle": "Nous concevons et délivrons des expériences d'apprentissage alignées avec votre stratégie, vos équipes et vos objectifs.",
     "items": [
-      "Programmes d'apprentissage personnalisés basés sur vos besoins",
-      "Formation basée sur des scénarios réels inspirés de situations de votre organisation",
-      "Formats d'apprentissage flexibles adaptés au rythme de vos équipes",
-      "Parcours d'apprentissage clairs et certifications pour structurer la progression",
-      "Mise à niveau de votre contenu de formation existant pour le rendre plus engageant",
-      "Support continu et amélioration pour garder l'apprentissage pertinent dans le temps",
-      "Certification et accréditation"
+      "Programmes de formation conçus pour les équipes et les managers",
+      "Modules e-learning flexibles, accessibles à distance et déployables à grande échelle",
+      "Parcours blended learning combinant sessions live et apprentissage digital",
+      "Conception de contenus pédagogiques digitaux, incluant modules, scénarios et évaluations",
+      "Transformation de formations existantes en formats digitaux plus engageants"
     ]
   },
   "learning_cycle": {

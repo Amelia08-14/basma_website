@@ -2,6 +2,8 @@
   "navbar": {
     "about": "About",
     "solutions": "Solutions",
+    "elearning": "E-learning",
+    "blog": "Blog",
     "methodology": "Methodology",
     "expertise": "Expertise",
     "impact": "Impact",
@@ -9,7 +11,7 @@
   },
   "hero": {
     "title": "Corporate Training <br /> in Algeria for <br /> Business Performance",
-    "subtitle": "Basma Learning is your partner for corporate training in Algeria. When people grow their skills, business performance follows.",
+    "subtitle": "Basma Learning is your partner for corporate training in Algeria. We design and deliver instructor-led training, e-learning, and blended learning solutions that help organizations build capabilities and improve business performance.",
     "cta": "Discover Basma",
     "explore": "Explore our learning solutions",
     "journey_title": "A learning journey like no other",
@@ -38,13 +40,11 @@
     "title": "What We Do",
     "subtitle": "We design and deliver learning experiences that align with your strategy, your people, and your goals.",
     "items": [
-      "Custom learning programs built around your business needs",
-      "Real scenario-based training inspired by situations in your organization",
-      "Flexible learning formats that fit your teams' rhythm",
-      "Clear learning paths and certifications to structure progression",
-      "Upgrade your existing training content to make it more engaging",
-      "Continuous support and improvement to keep learning relevant over time",
-      "Certification and accreditation"
+      "Corporate training programs designed for business teams and managers",
+      "E-learning modules for flexible and scalable digital learning",
+      "Blended learning experiences combining live sessions and online learning",
+      "Design of digital learning content including modules, scenarios, and assessments",
+      "Transformation of existing training into engaging digital learning formats"
     ]
   },
   "learning_cycle": {

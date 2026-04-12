@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-export default function WhatWeDo({ dict }: { dict: any }) {
+export default function WhatWeDo({ dict, lang }: { dict: any; lang: string }) {
   const items = dict.items;
 
   return (
@@ -35,6 +36,14 @@ export default function WhatWeDo({ dict }: { dict: any }) {
                         <p className="text-xl 2xl:text-2xl text-white font-medium">{item}</p>
                     </motion.div>
                 ))}
+                <div className="pt-2">
+                  <Link
+                    href={`/${lang}/about`}
+                    className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2.5 text-sm font-medium text-black hover:bg-emerald-300 transition-colors"
+                  >
+                    {lang === 'fr' ? 'Découvrir le e-learning & blended learning' : 'Explore e-learning & blended learning'}
+                  </Link>
+                </div>
             </div>
 
            {/* Image Section */}
