@@ -25,9 +25,7 @@ export default function Contact({ dict }: { dict: any }) {
     };
 
     try {
-      // Use environment variable for API URL or default to localhost
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-      const response = await fetch(`${apiUrl}/api/contact`, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +33,14 @@ export default function Contact({ dict }: { dict: any }) {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      let result: any;
+      try {
+        result = await response.json();
+      } catch {
+        setStatus('error');
+        setMessage(`Server error (${response.status}).`);
+        return;
+      }
 
       if (response.ok && result.success) {
         setStatus('success');
