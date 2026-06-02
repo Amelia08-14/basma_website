@@ -132,5 +132,46 @@
     "copyright": "© 2026 Basma EdTech Company, All Rights Reserved. With Love by",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy"
+  },
+  "elearning_page": {
+    "title": "E-Learning and Blended Learning for Organizations in Algeria",
+    "intro": "E-learning enables organizations to train their teams in a flexible, scalable, and accessible way. Basma Learning designs digital learning solutions tailored to real business needs, combining instructional expertise with a performance-driven approach.",
+    "features": [
+      "Easy to access anytime, anywhere",
+      "Short, focused learning blocks",
+      "Real situations, not just theory",
+      "Clear progress tracking"
+    ],
+    "positioning_label": "Positioning",
+    "positioning_title": "Corporate training in Algeria, delivered through modern learning formats",
+    "positioning_body": "We combine instructor-led training with digital learning solutions: e-learning, blended learning, and digital learning, always focused on performance and business impact.",
+    "why_title": "Why e-learning matters",
+    "why_body": "E-learning allows organizations to make training accessible anytime and anywhere, while reducing delivery constraints and increasing scalability across teams. It supports self-paced learning and enables companies to deploy learning solutions more efficiently.",
+    "approach_title": "Basma Learning's approach",
+    "approach_body": "We design digital learning experiences based on real workplace situations, with a strong focus on engagement, practical application, and knowledge retention. Our approach combines instructional design principles with business relevance to create learning solutions that deliver measurable value.",
+    "blended_title": "Blended learning offer",
+    "blended_body": "Blended learning combines the strengths of live training and digital learning. By mixing facilitated sessions, e-learning modules, and practical activities, organizations can create more effective and engaging learning journeys.",
+    "usecases_title": "Use cases",
+    "usecases_body": "Our e-learning and blended learning solutions can support manager development, employee onboarding, soft skills training, and broader upskilling initiatives. Each solution is designed to fit the organization's context, audience, and learning objectives.",
+    "benefits_title": "Benefits",
+    "benefits_items": [
+      "Flexibility and accessibility",
+      "Scalability across teams",
+      "Engagement and real-world application",
+      "Business impact and performance"
+    ],
+    "cta_title": "Ready to implement a digital or blended solution?",
+    "cta_body": "Looking to implement an e-learning or blended learning solution tailored to your organization? Let's discuss your needs and design a learning experience that fits your business goals.",
+    "cta_button": "Contact us"
+  },
+  "values": {
+    "title": "Our Values",
+    "items": [
+      "BUILD SKILLS THAT LAST",
+      "LEARNING THAT FITS YOUR TEAMS",
+      "DESIGNED FOR REAL IMPACT",
+      "SIMPLE. MODERN. EFFECTIVE.",
+      "LEARNING THAT WORKS AT SCALE"
+    ]
   }
 }

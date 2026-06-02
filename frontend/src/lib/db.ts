@@ -25,7 +25,24 @@ function createDb() {
       published INTEGER NOT NULL DEFAULT 1,
       created_at TEXT NOT NULL DEFAULT (datetime('now')),
       updated_at TEXT NOT NULL DEFAULT (datetime('now'))
-    )
+    );
+
+    CREATE TABLE IF NOT EXISTS custom_pages (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      slug TEXT UNIQUE NOT NULL,
+      nav_label_fr TEXT NOT NULL DEFAULT '',
+      nav_label_en TEXT NOT NULL DEFAULT '',
+      show_in_nav INTEGER NOT NULL DEFAULT 0,
+      nav_order INTEGER NOT NULL DEFAULT 0,
+      published INTEGER NOT NULL DEFAULT 0,
+      content TEXT NOT NULL DEFAULT '{"blocks":[]}',
+      meta_title_fr TEXT NOT NULL DEFAULT '',
+      meta_title_en TEXT NOT NULL DEFAULT '',
+      meta_desc_fr TEXT NOT NULL DEFAULT '',
+      meta_desc_en TEXT NOT NULL DEFAULT '',
+      created_at TEXT NOT NULL DEFAULT (datetime('now')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+    );
   `);
 
   return db;
@@ -34,6 +51,26 @@ function createDb() {
 export const db: Database.Database = global._db ?? createDb();
 
 if (process.env.NODE_ENV !== 'production') global._db = db;
+
+// Migration : crée custom_pages si la table n'existe pas encore
+db.exec(`
+  CREATE TABLE IF NOT EXISTS custom_pages (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT UNIQUE NOT NULL,
+    nav_label_fr TEXT NOT NULL DEFAULT '',
+    nav_label_en TEXT NOT NULL DEFAULT '',
+    show_in_nav INTEGER NOT NULL DEFAULT 0,
+    nav_order INTEGER NOT NULL DEFAULT 0,
+    published INTEGER NOT NULL DEFAULT 0,
+    content TEXT NOT NULL DEFAULT '{"blocks":[]}',
+    meta_title_fr TEXT NOT NULL DEFAULT '',
+    meta_title_en TEXT NOT NULL DEFAULT '',
+    meta_desc_fr TEXT NOT NULL DEFAULT '',
+    meta_desc_en TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL DEFAULT (datetime('now')),
+    updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+  );
+`);
 
 export type DbBlogPost = {
   id: number;

@@ -7,6 +7,7 @@ import { clsx } from 'clsx';
 const nav = [
   { href: '/admin', label: 'Tableau de bord', exact: true },
   { href: '/admin/blog', label: 'Articles' },
+  { href: '/admin/pages', label: 'Pages' },
   { href: '/admin/translations', label: 'Traductions' },
 ];
 

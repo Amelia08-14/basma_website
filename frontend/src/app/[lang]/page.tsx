@@ -1,5 +1,5 @@
 import { getDictionary } from '../../dictionaries/get-dictionary';
-import Navbar from '../../components/Navbar';
+import NavbarServer from '../../components/NavbarServer';
 import Hero from '../../components/Hero';
 import About from '../../components/About';
 import WhatWeDo from '../../components/WhatWeDo';
@@ -14,7 +14,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   return (
     <main className="min-h-screen">
-      <Navbar dict={dict.navbar} lang={lang} />
+      <NavbarServer dict={dict.navbar} lang={lang} />
       <Hero dict={dict.hero} lang={lang} />
       <About dict={dict.about} />
       <WhatWeDo dict={dict.what_we_do} lang={lang} />

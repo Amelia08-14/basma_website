@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import FuturisticBackground from "@/components/FuturisticBackground";
+import { getNavPages } from "@/lib/pages";
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],

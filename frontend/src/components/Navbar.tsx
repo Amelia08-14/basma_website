@@ -6,15 +6,23 @@ import { Menu, X, Globe } from 'lucide-react';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
+type NavCustomPage = { slug: string; nav_label_fr: string; nav_label_en: string; nav_order: number };
+
+export default function Navbar({ dict, lang, customPages = [] }: { dict: any; lang: string; customPages?: NavCustomPage[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+
+  const customItems = customPages.map(p => ({
+    name: lang === 'fr' ? p.nav_label_fr : p.nav_label_en,
+    href: `/${lang}/${p.slug}`,
+  }));
 
   const navItems = [
     { name: dict.about, href: `/${lang}/#impact` },
     { name: dict.solutions, href: `/${lang}/solutions` },
     { name: dict.elearning, href: `/${lang}/about` },
     { name: dict.blog, href: `/${lang}/blog` },
+    ...customItems,
     { name: dict.expertise, href: `/${lang}/#expertise` },
     { name: dict.contact, href: `/${lang}/#contact` },
   ];

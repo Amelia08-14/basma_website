@@ -1,5 +1,5 @@
 import { getDictionary } from '../../../dictionaries/get-dictionary';
-import Navbar from '@/components/Navbar';
+import NavbarServer from '@/components/NavbarServer';
 import Values from '@/components/Values';
 import WhereWeHelp from '@/components/WhereWeHelp';
 import Experience from '@/components/Experience';
@@ -24,10 +24,10 @@ export default async function SolutionsPage({ params }: { params: Promise<{ lang
 
   return (
     <main className="min-h-screen">
-      <Navbar dict={dict.navbar} lang={lang} />
+      <NavbarServer dict={dict.navbar} lang={lang} />
       <div className="pt-24 pb-12">
         <Experience dict={dict.experience} />
-        <Values />
+        <Values dict={dict.values} />
         <WhereWeHelp dict={dict.where_we_help} />
       </div>
       <Footer dict={dict.footer} />

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
+import NavbarServer from '@/components/NavbarServer';
 import Footer from '@/components/Footer';
 import { getDictionary } from '@/dictionaries/get-dictionary';
 import { getBlogPost } from '@/lib/blog';
@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
 
   return (
     <main className="min-h-screen">
-      <Navbar dict={dict.navbar} lang={lang} />
+      <NavbarServer dict={dict.navbar} lang={lang} />
       <div className="pt-24 pb-16">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
