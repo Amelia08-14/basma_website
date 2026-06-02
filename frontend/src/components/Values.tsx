@@ -11,7 +11,7 @@ const ICONS = [
   <Maximize className="text-white" key="maximize" />,
 ];
 
-type ValuesDict = { title: string; items: string[] };
+type ValuesDict = { title: string; items: string[]; image_main?: string; image_secondary?: string };
 
 export default function Values({ dict }: { dict: ValuesDict }) {
   return (
