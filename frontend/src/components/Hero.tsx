@@ -47,9 +47,9 @@ export default function Hero({ dict, lang }: { dict: any, lang: string }) {
               className="relative z-10 flex justify-center lg:justify-end"
             >
                   <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-emerald-500/20 rounded-full blur-[80px] opacity-40" />
-                  <img 
-                    src="/robot.png" 
-                    alt="Basma Robot" 
+                  <img
+                    src={dict.robot_image || '/robot.png'}
+                    alt="Basma Robot"
                     className="relative z-10 w-full h-auto object-contain max-h-[400px] lg:max-h-[500px] 2xl:max-h-[650px] drop-shadow-2xl"
                   />
             </motion.div>
@@ -71,9 +71,9 @@ export default function Hero({ dict, lang }: { dict: any, lang: string }) {
                         </p>
                     </div>
                     <div className="relative h-full w-full flex items-center justify-center p-4">
-                        <img 
-                            src="/learning.png" 
-                            alt="Learning Journey" 
+                        <img
+                            src={dict.journey_image || '/learning.png'}
+                            alt="Learning Journey"
                             className="w-full h-full object-contain max-h-[250px]"
                         />
                     </div>

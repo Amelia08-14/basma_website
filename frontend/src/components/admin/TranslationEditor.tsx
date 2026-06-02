@@ -13,6 +13,50 @@ function isStringArray(v: unknown): v is string[] {
   return Array.isArray(v) && v.every((i) => typeof i === 'string');
 }
 
+function isImageKey(key: string) {
+  return key.endsWith('_image') || key === 'image' || key.endsWith('_img');
+}
+
+function ImageField({ value, onChange, label }: { value: string; onChange: (v: string) => void; label: string }) {
+  const [uploading, setUploading] = useState(false);
+
+  async function handleUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    const fd = new FormData();
+    fd.append('file', file);
+    const res = await fetch('/api/admin/upload', { method: 'POST', body: fd });
+    const data = await res.json();
+    if (res.ok) onChange(data.url);
+    setUploading(false);
+  }
+
+  return (
+    <div className="space-y-2">
+      <label className="block text-xs text-gray-500 font-mono">{label}</label>
+      <div className="flex items-center gap-3">
+        {value && (
+          <img src={value} alt="" className="h-16 w-24 object-cover rounded-lg border border-white/10 shrink-0" />
+        )}
+        <div className="flex-1 space-y-1">
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            className="w-full bg-gray-800 border border-white/10 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:ring-1 focus:ring-emerald-500 font-mono"
+            placeholder="/chemin/image.png"
+          />
+          <label className="inline-flex items-center gap-1.5 cursor-pointer bg-gray-700 hover:bg-gray-600 text-gray-300 text-xs px-3 py-1.5 rounded-lg transition-colors">
+            {uploading ? 'Upload…' : '↑ Changer l\'image'}
+            <input type="file" accept="image/*" onChange={handleUpload} className="hidden" />
+          </label>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function StringField({
   value,
   onChange,
@@ -103,6 +147,16 @@ function RecursiveEditor({
         const fullKey = prefix ? `${prefix}.${key}` : key;
 
         if (isString(value)) {
+          if (isImageKey(key)) {
+            return (
+              <ImageField
+                key={fullKey}
+                label={fullKey}
+                value={value}
+                onChange={(v) => onChange({ ...data, [key]: v })}
+              />
+            );
+          }
           return (
             <StringField
               key={fullKey}

@@ -55,10 +55,10 @@ export default function Values({ dict }: { dict: ValuesDict }) {
             className="relative h-[500px] 2xl:h-[600px] w-full"
           >
             <div className="absolute top-0 left-0 w-[85%] h-[85%] z-20">
-              <img src="/our_values.png" alt="Our Values" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500 drop-shadow-2xl" />
+              <img src={dict.image_main || '/our_values.png'} alt="Our Values" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500 drop-shadow-2xl" />
             </div>
             <div className="absolute bottom-0 right-0 w-[60%] h-[50%] z-10">
-              <img src="/our_value.png" alt="Our Value" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <img src={dict.image_secondary || '/our_value.png'} alt="Our Value" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </motion.div>
         </div>

@@ -90,7 +90,7 @@ export default async function ELearningPage({ params }: { params: Promise<{ lang
               <div className="space-y-8">
                 <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
                   <div className="relative aspect-[16/10] w-full">
-                    <Image src="/blog/cover-2.jpg" alt="E-learning" fill className="object-cover" priority />
+                    <Image src={p.cover_image || '/blog/cover-2.jpg'} alt="E-learning" fill className="object-cover" priority />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/5" />
                   </div>
                   <div className="p-6 2xl:p-8">

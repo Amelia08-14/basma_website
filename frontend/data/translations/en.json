@@ -15,7 +15,9 @@
     "cta": "Discover Basma",
     "explore": "Explore our learning solutions",
     "journey_title": "A learning journey like no other",
-    "journey_desc": "Whatever your goal, upskilling teams, supporting transformation, or building new capabilities, the journey can start here."
+    "journey_desc": "Whatever your goal, upskilling teams, supporting transformation, or building new capabilities, the journey can start here.",
+    "robot_image": "/robot.png",
+    "journey_image": "/learning.png"
   },
   "about": {
     "title": "WHO WE ARE",
@@ -162,10 +164,13 @@
     ],
     "cta_title": "Ready to implement a digital or blended solution?",
     "cta_body": "Looking to implement an e-learning or blended learning solution tailored to your organization? Let's discuss your needs and design a learning experience that fits your business goals.",
-    "cta_button": "Contact us"
+    "cta_button": "Contact us",
+    "cover_image": "/blog/cover-2.jpg"
   },
   "values": {
     "title": "Our Values",
+    "image_main": "/our_values.png",
+    "image_secondary": "/our_value.png",
     "items": [
       "BUILD SKILLS THAT LAST",
       "LEARNING THAT FITS YOUR TEAMS",

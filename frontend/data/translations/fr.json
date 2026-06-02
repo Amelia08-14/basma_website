@@ -15,7 +15,9 @@
     "cta": "Découvrir Basma",
     "explore": "Découvrir nos solutions",
     "journey_title": "Un parcours d'apprentissage unique",
-    "journey_desc": "Quel que soit votre objectif, montée en compétences, accompagnement de la transformation ou développement de nouvelles capacités, le voyage commence ici."
+    "journey_desc": "Quel que soit votre objectif, montée en compétences, accompagnement de la transformation ou développement de nouvelles capacités, le voyage commence ici.",
+    "robot_image": "/robot.png",
+    "journey_image": "/learning.png"
   },
   "about": {
     "title": "QUI NOUS SOMMES",
@@ -162,10 +164,13 @@
     ],
     "cta_title": "Prêt à lancer un parcours digital ou hybride ?",
     "cta_body": "Vous souhaitez déployer une solution e-learning ou blended learning alignée sur vos objectifs business ? Parlons de vos besoins et concevons une expérience adaptée.",
-    "cta_button": "Nous contacter"
+    "cta_button": "Nous contacter",
+    "cover_image": "/blog/cover-2.jpg"
   },
   "values": {
     "title": "Nos Valeurs",
+    "image_main": "/our_values.png",
+    "image_secondary": "/our_value.png",
     "items": [
       "DÉVELOPPER DES COMPÉTENCES DURABLES",
       "APPRENDRE SELON VOS ÉQUIPES",
