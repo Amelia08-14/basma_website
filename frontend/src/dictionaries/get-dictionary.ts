@@ -1,11 +1,12 @@
 import 'server-only';
+import fs from 'fs';
+import path from 'path';
 
-const dictionaries = {
-  en: () => import('./en.json').then((module) => module.default),
-  fr: () => import('./fr.json').then((module) => module.default),
-};
+const DATA_DIR = path.join(process.cwd(), 'data', 'translations');
 
-export const getDictionary = async (locale: string) => {
-    if (locale === 'fr') return dictionaries.fr();
-    return dictionaries.en();
+export const getDictionary = (locale: string) => {
+  const lang = locale === 'fr' ? 'fr' : 'en';
+  const filePath = path.join(DATA_DIR, `${lang}.json`);
+  const content = fs.readFileSync(filePath, 'utf-8');
+  return JSON.parse(content);
 };

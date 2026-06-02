@@ -45,3 +45,11 @@ node_modules
 .next
 dist
 build
+
+# runtime data
+/data/blog.db
+/data/blog.db-wal
+/data/blog.db-shm
+
+# user uploads
+/public/uploads/

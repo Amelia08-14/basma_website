@@ -1,0 +1,117 @@
+import type { BlogPost } from './blog';
+
+export const INITIAL_POSTS: BlogPost[] = [
+  {
+    slug: 'bridging-the-learning-gap-in-mena',
+    date: '2026-03-11',
+    tags: ['MENA', 'L&D', 'Workforce', 'Corporate training'],
+    coverImage: '/blog/cover-1.jpg',
+    coverAlt: 'Globe on a desk',
+    translations: {
+      en: {
+        title: 'Bridging the Learning Gap in MENA: Why Adaptable Learning Is Now a Business Imperative',
+        description: 'The region has talent and momentum, but learning models must evolve: modular, adaptive, practical programs aligned with real economic needs.',
+        blocks: [
+          { type: 'p', text: 'Across the Middle East and North Africa, the conversation around education and professional development is evolving rapidly. The region holds one of the youngest and most dynamic populations globally, yet access to high-quality, relevant learning remains uneven.' },
+          { type: 'p', text: 'The challenge is not a lack of talent. It is a lack of alignment.' },
+          { type: 'p', text: 'Despite strong potential and pockets of excellence, the broader learning ecosystem still struggles to keep pace with the realities of modern economies and fast-changing industries.' },
+          { type: 'h2', text: 'A Region Full of Talent, Yet Unevenly Equipped' },
+          { type: 'p', text: 'The MENA region is rich in human potential. However, access to high-quality learning experiences remains inconsistent.' },
+          { type: 'p', text: 'Many learners do not benefit from the same exposure, infrastructure, or adaptability found in more mature education systems. Traditional models, still widely used, often fail to reflect the real demands of today\'s workplace.' },
+          { type: 'p', text: 'This creates a gap — not in capability, but in opportunity.' },
+          { type: 'h2', text: 'The Limits of Standardized Learning Models' },
+          { type: 'p', text: 'For decades, standardized, one-size-fits-all programs have shaped education and training systems. While effective in the past, they are no longer suited to the current environment.' },
+          { type: 'p', text: 'Today\'s workforce must be:' },
+          { type: 'ul', items: ['agile', 'digitally fluent', 'capable of continuous learning', 'equipped with both technical and human skills'] },
+          { type: 'p', text: 'Yet many programs in the region still rely on outdated content, rigid structures, and limited practical application.' },
+          { type: 'h2', text: 'The Shift Toward Fit-for-Purpose Learning' },
+          { type: 'p', text: 'What the region needs is not more content, but better-designed learning.' },
+          { type: 'ul', items: ['real business needs rather than generic curricula', 'sector-specific skills (energy, tech, finance, healthcare, etc.)', 'flexibility and accessibility', 'practical application over theory'] },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: 'The MENA region has the talent, ambition, and momentum to transform its economies.' },
+          { type: 'p', text: 'Because in the end, the future of our economies will not be defined by resources — but by the people we develop.' },
+        ],
+      },
+      fr: {
+        title: "Réduire le Learning Gap au MENA : pourquoi l'apprentissage adaptable est devenu un impératif business",
+        description: "La région regorge de talents, mais les modèles de formation doivent évoluer : des parcours modulaires, adaptatifs et pratiques, alignés sur la réalité économique.",
+        blocks: [
+          { type: 'p', text: "À travers le Moyen-Orient et l'Afrique du Nord, la conversation autour de l'éducation et du développement professionnel évolue rapidement." },
+          { type: 'p', text: "Le défi n'est pas un manque de talent. C'est un manque d'alignement." },
+          { type: 'h2', text: 'Une région pleine de talents, mais inégalement équipée' },
+          { type: 'p', text: "La région MENA regorge de potentiel humain. Pourtant, l'accès à des expériences d'apprentissage de haute qualité reste inconstant." },
+          { type: 'h2', text: 'Vers un apprentissage « fit-for-purpose »' },
+          { type: 'p', text: "Ce dont la région a besoin, ce n'est pas de plus de contenu, mais d'un apprentissage mieux conçu." },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: 'La région MENA a le talent, l\'ambition et l\'élan pour transformer ses économies.' },
+          { type: 'p', text: "Car au final, l'avenir de nos économies ne sera pas défini par les ressources — mais par les personnes que nous développons." },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'why-modern-learning-is-a-strategic-imperative',
+    date: '2026-04-11',
+    tags: ['Modern learning', 'Performance', 'L&D', 'Strategy'],
+    coverImage: '/blog/cover-2.jpg',
+    coverAlt: 'Team collaborating around a laptop',
+    translations: {
+      en: {
+        title: 'Why Modern Learning Is a Strategic Imperative for High-Performance Organizations',
+        description: 'In a world of rapid change, modern learning becomes a strategic driver: faster capability building, higher relevance, measurable impact.',
+        blocks: [
+          { type: 'p', text: 'In today\'s environment, where technologies, markets, and customer expectations evolve at unprecedented speed, organizations face a critical challenge.' },
+          { type: 'p', text: 'Learning is no longer a support function. It is a strategic driver of performance.' },
+          { type: 'h2', text: 'Why Traditional Training Models No Longer Work' },
+          { type: 'p', text: 'Many organizations still rely on training approaches designed for a more stable and predictable world.' },
+          { type: 'ul', items: ['slow time-to-competency', 'low knowledge retention', 'weak alignment with evolving roles'] },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: 'For organizations committed to building resilient, high-performance teams, investing in modern learning is no longer optional.' },
+        ],
+      },
+      fr: {
+        title: "Pourquoi l'apprentissage moderne est un impératif stratégique pour les organisations à haute performance",
+        description: "Dans un monde qui change vite, l'apprentissage moderne devient un moteur stratégique : acquisition plus rapide, pertinence accrue, impact mesurable.",
+        blocks: [
+          { type: 'p', text: "Dans l'environnement actuel, les organisations font face à un défi critique : leur capacité à développer les talents est souvent en retard par rapport au rythme du changement." },
+          { type: 'p', text: "L'apprentissage n'est plus une fonction support. C'est un driver stratégique de la performance." },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: "Pour les organisations engagées dans la construction d'équipes résilientes et performantes, investir dans l'apprentissage moderne n'est plus optionnel." },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'your-teams-are-not-underperforming-your-training-is',
+    date: '2026-04-11',
+    tags: ['Algeria', 'Corporate training', 'Performance', 'L&D'],
+    coverImage: '/blog/cover-3.jpg',
+    coverAlt: 'Team in a meeting',
+    translations: {
+      en: {
+        title: 'Your Teams Are Not Underperforming — Your Training Is',
+        description: 'If KPIs don\'t move after training, the issue is rarely your people. It\'s how learning is designed.',
+        blocks: [
+          { type: 'p', text: 'Every year, companies across Algeria invest significantly in corporate training.' },
+          { type: 'p', text: 'The issue is rarely the people. More often, it is the way training is designed.' },
+          { type: 'h2', text: 'The Real Problem: Generic Training' },
+          { type: 'ul', items: ['designed for broad audiences', 'disconnected from specific business contexts', 'focused on content rather than performance'] },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: 'It should transform how teams perform.' },
+        ],
+      },
+      fr: {
+        title: "Vos équipes ne sous-performent pas — c'est votre formation qui sous-performe",
+        description: "Si les KPI ne bougent pas après une formation, le problème vient rarement des équipes.",
+        blocks: [
+          { type: 'p', text: "Chaque année, des entreprises en Algérie investissent massivement dans la formation corporate." },
+          { type: 'p', text: "Le problème vient rarement des personnes. Il vient le plus souvent de la manière dont la formation est conçue." },
+          { type: 'h2', text: 'Le vrai problème : la formation générique' },
+          { type: 'ul', items: ['pensés pour un public trop large', 'déconnectés des contextes business spécifiques', 'centrés sur le contenu plutôt que sur la performance'] },
+          { type: 'h2', text: 'Conclusion' },
+          { type: 'p', text: "Elle doit transformer la manière dont les équipes performent." },
+        ],
+      },
+    },
+  },
+];
