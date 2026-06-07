@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
   const safeName = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
   const dest = path.join(UPLOAD_DIR, safeName);
 
+  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
   const buffer = Buffer.from(await file.arrayBuffer());
   fs.writeFileSync(dest, buffer);
 
