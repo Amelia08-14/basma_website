@@ -249,9 +249,15 @@ export default function BlogEditor({ initial }: { initial?: PostData }) {
     const fd = new FormData();
     fd.append('file', file);
     const res = await fetch('/api/admin/upload', { method: 'POST', body: fd });
-    const data = await res.json();
-    if (res.ok) setPost((p) => ({ ...p, coverImage: data.url }));
-    else setError(data.error || 'Erreur upload');
+    if (res.status === 413) {
+      setError('Image trop lourde — limite nginx dépassée (max ~8 MB). Compressez l\'image et réessayez.');
+      setUploading(false);
+      return;
+    }
+    let data: { url?: string; error?: string } = {};
+    try { data = await res.json(); } catch { /* réponse non-JSON */ }
+    if (res.ok && data.url) setPost((p) => ({ ...p, coverImage: data.url! }));
+    else setError(data.error || `Erreur upload (${res.status})`);
     setUploading(false);
   }
 

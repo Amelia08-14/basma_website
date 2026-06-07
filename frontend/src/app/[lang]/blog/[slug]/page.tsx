@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import NavbarServer from '@/components/NavbarServer';
 import Footer from '@/components/Footer';
@@ -95,8 +94,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 lg:col-span-8">
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
-                <div className="relative aspect-[16/9] w-full">
-                  <Image src={post.coverImage} alt={post.coverAlt} fill className="object-cover" priority />
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <img src={post.coverImage} alt={post.coverAlt} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
                 </div>
                 <div className="p-6 md:p-10">

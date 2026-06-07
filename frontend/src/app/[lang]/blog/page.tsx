@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import NavbarServer from '@/components/NavbarServer';
 import Footer from '@/components/Footer';
@@ -55,8 +54,8 @@ export default async function BlogIndex({ params }: { params: Promise<{ lang: st
                 href={`/${lang}/blog/${post.slug}`}
                 className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-colors"
               >
-                <div className="relative aspect-[16/9] w-full">
-                  <Image src={post.coverImage} alt={post.coverAlt} fill className="object-cover" />
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <img src={post.coverImage} alt={post.coverAlt} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
                   <div className="absolute left-4 right-4 bottom-4">
                     <div className="flex flex-wrap items-center gap-2 text-[11px] text-gray-200">
