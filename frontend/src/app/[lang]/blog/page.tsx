@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const dynamic = 'force-dynamic';
 import NavbarServer from '@/components/NavbarServer';
 import Footer from '@/components/Footer';
 import { getDictionary } from '@/dictionaries/get-dictionary';
